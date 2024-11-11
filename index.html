@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Sitting App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main content area -->
+    <div class="app-container">
+        <header>
+            <h1>Welcome to the Pet Sitting App</h1>
+        </header>
+
+        <!-- Option to select if the user is a pet owner or sitter -->
+        <section class="user-selection">
+            <h2>Choose Your Profile Type</h2>
+            <button id="ownerButton">I am a Pet Owner</button>
+            <button id="sitterButton">I am a Pet Sitter</button>
+        </section>
+
+        <!-- Profile section that displays after selection -->
+        <section id="profileSection" style="display: none;">
+            <h2 id="profileTitle"></h2>
+            
+            <!-- Profile form for Pet Owner -->
+            <div id="ownerProfile" class="profile-form" style="display: none;">
+                <h3>Pet Owner Profile</h3>
+                <label for="ownerName">Name:</label>
+                <input type="text" id="ownerName" placeholder="Your Name">
+                
+                <label for="ownerLocation">Location:</label>
+                <input type="text" id="ownerLocation" placeholder="Your Location">
+                
+                <label for="petType">Pet Type:</label>
+                <input type="text" id="petType" placeholder="Type of Pet">
+                
+                <label for="contactEmail">Contact Email:</label>
+                <input type="email" id="contactEmail" placeholder="Email">
+                
+                <label for="contactPhone">Phone Number:</label>
+                <input type="tel" id="contactPhone" placeholder="Phone Number">
+                
+                <label for="serviceNeeded">Service Needed:</label>
+                <input type="text" id="serviceNeeded" placeholder="Service Type (e.g., pet sitting, walking)">
+            </div>
+
+            <!-- Profile form for Pet Sitter -->
+            <div id="sitterProfile" class="profile-form" style="display: none;">
+                <h3>Pet Sitter Profile</h3>
+                <label for="sitterName">Name:</label>
+                <input type="text" id="sitterName" placeholder="Your Name">
+                
+                <label for="sitterAge">Age:</label>
+                <input type="number" id="sitterAge" placeholder="Your Age">
+                
+                <label for="sitterLocation">Location:</label>
+                <input type="text" id="sitterLocation" placeholder="Your Location">
+                
+                <label for="experience">Experience:</label>
+                <textarea id="experience" placeholder="Describe your experience"></textarea>
+                
+                <label for="preferredPet">Preferred Pet Type:</label>
+                <input type="text" id="preferredPet" placeholder="Type of Pet You Prefer">
+            </div>
+        </section>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
